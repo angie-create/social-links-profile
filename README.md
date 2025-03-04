@@ -44,15 +44,34 @@ Users should be able to:
 ### What I learned
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
 
-- I added Google fonts and used semantic HTML5
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 ```
+- I added Google fonts and used semantic HTML5
+
 ```css
 
-- I used query to make it responsive and hover
+button:hover {
+    background: var(--color-green, #C4F82A);
+    color: var(--color-grey-700, #333);
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+        display: flex;
+        padding: var(--spacing-300, 24px);
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-300, 24px);
+        flex: 1 0 0;
+    }
+}
 
 ```
+- I used query to make it responsive and hover
 
 ### Useful resources
 
