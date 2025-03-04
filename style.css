@@ -1,0 +1,132 @@
+body {
+    background-color: #141414;
+    font-size: 14px;
+    display: flex;
+    width: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.card {
+    display: flex;
+    max-width: 304px;
+    padding: var(--spacing-500, 40px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300, 24px);
+    flex: 1 0 0;
+    border-radius: 12px;
+    background: var(--color-grey-800, #1F1F1F);
+}
+
+img {
+    width: 88px;
+    height: 88px;
+    border-radius: 999px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    margin: 0%;
+}
+
+.name-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-50, 4px);
+    align-self: stretch;
+    margin: 0%;
+}
+
+h1 {
+    color: var(--color-white, #FFF);
+    text-align: center;
+    align-self: stretch;
+    margin: 0%;
+
+    /* text-preset-1 */
+    font-family: Inter;
+    font-size: var(--font-size-text-preset-1, 24px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+
+}
+
+h2 {
+    color: var(--color-green, #C4F82A);
+    text-align: center;
+    align-self: stretch;
+    margin: 0%;
+
+    /* text-preset-2-bold */
+    font-family: Inter;
+    font-size: var(--font-size-text-preset-2, 14px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+
+}
+
+p {
+    color: var(--color-white, #FFF);
+    text-align: center;
+    align-self: stretch;
+
+    /* text-preset-2 */
+    font-family: Inter;
+    font-size: var(--font-size-text-preset-2, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    margin: 0%;
+
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-200, 16px);
+    align-self: stretch;
+    margin: 0%;
+
+}
+
+button {
+    display: flex;
+    padding: var(--spacing-150, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-100, 8px);
+    align-self: stretch;
+    border-radius: 8px;
+    border: none;
+    background: var(--color-grey-700, #333);
+
+    color: var(--color-white, #FFF);
+
+    /* text-preset-2-bold */
+    font-family: Inter;
+    font-size: var(--font-size-text-preset-2, 14px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    transition-duration: 1.5s;
+}
+
+button:hover {
+    background: var(--color-green, #C4F82A);
+    color: var(--color-grey-700, #333);
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+        display: flex;
+        padding: var(--spacing-300, 24px);
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-300, 24px);
+        flex: 1 0 0;
+    }
+}
